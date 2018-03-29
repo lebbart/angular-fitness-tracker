@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:active,
+a:hover {
+  color: lightgray;
+}
+
+.navigation-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
