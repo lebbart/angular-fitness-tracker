@@ -60,7 +60,10 @@
       style="margin-top: 25px;"
       type="submit"
       [disabled]="f.invalid"
+      *ngIf="!isLoading"
       mat-raised-button
       color="primary">Submit</button>
+
+    <mat-spinner diameter="22" strokeWidth="3" color="primary" *ngIf="isLoading"></mat-spinner>
   </form>
 </section>

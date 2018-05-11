@@ -33,6 +33,10 @@
       type="submit"
       [disabled]="f.invalid"
       mat-raised-button
-      color="primary">Login</button>
+      *ngIf="!isloading"
+      color="primary">Login
+    </button>
+
+    <mat-spinner diameter="22" strokeWidth="3" color="primary" *ngIf="isloading"></mat-spinner>
   </form>
 </section>
